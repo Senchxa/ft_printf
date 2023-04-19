@@ -3,7 +3,7 @@
 void	type_check(char s, va_list *args, int *len, int *i)
 {
 	if (s == 's')
-		ft_string(va_arg(*args, char *), len);
+		ft_putstr(va_arg(*args, char *), len);
 	else if (s == 'i' || s == 'd')
 		ft_putnbr(va_arg(*args, int ), len);
 	else
