@@ -6,12 +6,12 @@
 /*   By: dnoll <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/14 13:20:59 by dnoll             #+#    #+#             */
-/*   Updated: 2023/05/14 15:22:30 by dnoll            ###   ########.fr       */
+/*   Updated: 2023/05/14 15:46:05 by dnoll            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <stdio.h>
+/*#include <stdio.h>*/
 
 void	type_check(char s, va_list *args, int *len, int *i)
 {
@@ -62,7 +62,7 @@ int	ft_printf(const char *str, ...)
 	return (length);
 }
 
-int	main()
+/*int	main()
 {
 	char c = 'A';
 	int i = -4200;
@@ -88,4 +88,4 @@ int	main()
     printf("%%u: %u\n", u);
     printf("%%p: %p\n", p);
     printf("%%c: %c\n", c);
-}
+}*/

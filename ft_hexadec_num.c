@@ -6,7 +6,7 @@
 /*   By: dnoll <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/14 13:40:36 by dnoll             #+#    #+#             */
-/*   Updated: 2023/05/14 14:36:46 by dnoll            ###   ########.fr       */
+/*   Updated: 2023/05/14 16:19:35 by dnoll            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ void	ft_hexadec_num(unsigned int x, int *length, char format)
 	int		i;
 
 	if (format == 'x')
-		base_character = "0123456789ABCDEF";
-	else
 		base_character = "0123456789abcdef";
+	else
+		base_character = "0123456789ABCDEF";
 	i = 0;
 	if (x == 0)
 	{
