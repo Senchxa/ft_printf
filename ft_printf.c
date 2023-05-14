@@ -6,6 +6,14 @@ void	type_check(char s, va_list *args, int *len, int *i)
 		ft_putstr(va_arg(*args, char *), len);
 	else if (s == 'i' || s == 'd')
 		ft_putnbr(va_arg(*args, int ), len);
+	else if (s == 'u')
+		ft_unsigned_int(va_arg(*args, unsigned int), len);
+	else if (s == 'p')
+		ft_pointer(va_arg(*args, size_t), len);
+	else if (s == 'c')
+		ft_putchar_len(va_arg(*args, int), len);
+	else if (s == '%')
+		ft_putchar_len('%', len);
 	else
 		(*i)--;
 }
